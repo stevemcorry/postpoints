@@ -7,8 +7,10 @@
 
   <ion-content class="page">
     <ion-list>
-      <div menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)"  class="page">
-        {{p.title}}
+      <div menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)"  class="menuItem">
+        <div>
+          <div class="itemBorder">{{p.title}}</div>
+        </div>
       </div>
     </ion-list>
   </ion-content>
