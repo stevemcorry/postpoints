@@ -3,12 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only (click)="add()">
-        <ion-icon name="add"></ion-icon>
-      </button>
-    </ion-buttons>
+    <ion-title>{{category.name}}</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -22,8 +17,8 @@
     </div>
     <div class="line"></div>
     <div class="categories">
-      <div *ngFor="let c of categories | async" class="c" (click)="log(c); nextPage(c)">
-        <div>
+      <div *ngFor="let c of categories | async" class="c">
+        <div (click)="log(c)">
           {{c.name}}
         </div>
       </div>

@@ -28,13 +28,13 @@ page-home {
     .categories{
         display: flex;
         flex-wrap: wrap;
-        height: 70%;
-        align-content: space-between;
+        align-content: flex-start;
     }
     .c{
-        width: 47%;
-        height: 32%;
+        width: 45vw;
+        height: 45vw;
         background-color: white;
         margin: auto;
+        margin-top: 5px;
     }
 }
